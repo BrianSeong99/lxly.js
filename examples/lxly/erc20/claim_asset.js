@@ -1,8 +1,8 @@
 const { getLxLyClient, tokens, configuration, from } = require('../../utils_lxly');
 
 const execute = async () => {
-    const bridgeTransactionHash = "0xe80c84456d6e77dec4fb07e21242e714c42fabf382b6c538258cf2c7dc312f60";
-    const client = await getLxLyClient('testnet');
+    const bridgeTransactionHash = "0x6f312627ea607a39f494f49e8b40e9a71c61ad3173a6876f09dd9de7b540c040";
+    const client = await getLxLyClient();
 
     const token = client.erc20(tokens[0].ether, 0);
     const sourceNetworkId = 1;
